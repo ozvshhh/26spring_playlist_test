@@ -1,0 +1,156 @@
+*{
+    box-sizing : border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Noto+Sans+KR:wght@100..900&display=swap');
+.just-another-hand-regular {
+  font-family: "Just Another Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* 땡땡이 배경 */
+.container{
+    min-height: 100vh;
+    background-image: url("./source/black_dot_bg.png");
+    background-size: cover;
+}
+
+/* 체크무늬 */
+.playlist-board{
+    background-image: url("./source/black_check_bg.png");
+    width: 100vw;
+    min-height: 100vh;
+    background-size: 100% auto;   /* 가로 100%, 세로 비율 유지 */
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    padding-top: 75px;
+
+}
+
+.board-header{
+
+
+}
+
+.Mixtape2{
+    background-image: url("./source/title.png");
+    width: 100%;
+    height: 220px;    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.cat-sticker{
+    position: absolute;
+    top: 45px;
+    left: 43px;
+    width: 129px;
+    height: 100px;
+    z-index: 2;
+    background-image: url("./source/yawn_cat.png");
+}
+
+.now-playing{
+    margin: 0 auto;
+    background-image: url("./source/white_paper_2.png");
+    width: 100%;
+    height: 320px;
+    background-size: cover;
+}
+
+
+.tape-set{
+    position: relative;
+    top: -40px;
+    
+}
+.now-playing .track-cassette{
+    width: 100vw;
+}
+.now-playing .track-cassette img{
+    display: block;
+    margin: 0 auto;
+    width: 240px;
+    height: 150px;
+}
+
+.now-playing .track-card{
+    width: 100vw;
+}
+.now-playing .track-card img{
+    display: block;
+    margin: 0 auto;
+    width: 240px;
+    height: 150px;
+}
+
+.text-box{
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: -110px;
+}
+
+p {
+    font-family: "Just Another Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+}
+p::-webkit-scrollbar{
+  display:none;
+}
+
+.cassette-strip{
+    background-image: url("./source//cracked_paper.png");
+    height: 186px;
+    margin-top: -50px;
+
+    display: flex;
+    align-items: center;
+}
+
+.cassette-list {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    gap: 16px;
+
+    height: 90px;
+    padding-bottom: 8px;
+
+    align-items: center;   /* ⭐ 이거 추가 */
+}
+.cassette-list::-webkit-scrollbar{
+  display:none;
+}
+
+.cassette-item {
+    flex: 0 0 auto;       /* ⭐ shrink 방지 (핵심) */
+    width: 150px;
+    height: 100px;
+}
+
+.cassette-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+ul{
+    list-style: none;
+}
